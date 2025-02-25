@@ -1,0 +1,98 @@
+.container-header {
+  position: sticky;
+}
+
+.nav-link {
+  color: black;
+    /* This is just changing the words, but not the SVGs/PNGs */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  /* font-family: "Poppins", sans-serif; */
+  position: sticky;
+}
+
+.header-logo {
+  color: #044159;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.container-cover {
+  background:url(./Photos/webpage-background4.jpg);
+  background-size:100%;
+  background-repeat:no-repeat;
+  color: white;
+}
+
+.container-cover h1 {
+  color: white;
+}
+
+
+.img-container {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border: dotted #0D8C8C 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;}
+
+.myCarousel {
+  background-color: white;
+  /* This is just a placeholder. wondering why this changed the size of the footer. */
+}
+
+.contact-me {
+  place-items: center;
+}
+
+.btn {
+  background-color: #0D8C8C;
+  color: white;
+  border-color: #044159; 
+}
+
+.container-footer {
+  background:url(./Photos/webpage-background4.jpg);
+  background-size:100%;
+  background-repeat:no-repeat;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.nav {
+  background-color: white;
+  /* This is just a placeholder. wondering why this changed the size of the footer. */
+}
+
+
+  /* This needs to be modified and changed for scaling of website */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }}
+
+    /*@media (min-width: 319px) and (max-width: 480px) {
+      body {
+        background-color: lightsalmon;}
+      }
+        [lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
