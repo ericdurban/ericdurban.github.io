@@ -47,10 +47,6 @@ hr {
   width: 4%;
   margin: 100px auto;}
 
-.myCarousel {
-  background-color: white;
-  /* This is just a placeholder. wondering why this changed the size of the footer. */
-}
 
 .contact-me {
   place-items: center;
@@ -87,12 +83,3 @@ hr {
     100% {
       background-position: 0% 50%;
     }}
-
-    /*@media (min-width: 319px) and (max-width: 480px) {
-      body {
-        background-color: lightsalmon;}
-      }
-        [lightsalmon] Mobile Devices: 319px — 480px
-[powderblue] iPads and Tablets: 481px — 1200px
-[limegreen] Laptops: 1201px — 1600px
-[seagreen] Desktops: 1601px and more
