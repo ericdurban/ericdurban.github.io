@@ -1,31 +1,101 @@
+/* ===============
+       BODY
+=================*/
+ /* spans for defining important text */
+.highlighted-words {
+  font-weight: bold;
+  color: #044159 ;
+}
+.highlighted-words:hover {
+  color: #f95f21;
+}
+
+ /* Section dividers */
+hr {
+  border:inset #0D8C8C 2px;
+  border-bottom: none;
+  width: 70%;
+  margin: 100px auto;}
+
+  .btn {
+    background-color: #044159;
+    color: white;
+    border-color: #044159; 
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+  }
+
+  .btn:hover {
+    background-color: #f95f21;
+    border-color: #f95f21;
+    color: white;
+  }
+
+/* ===============
+       HEADER
+=================*/
 .container-header {
   position: sticky;
 }
 
+/* Nav Bar */
+.nav-button .btn {
+  background-color: #044159;
+  color: white;
+  border-color: #044159; 
+  border-radius: 10px;
+  cursor: default;
+  box-shadow: none;
+}
 .nav-link {
-  color: black;
-    /* This is just changing the words, but not the SVGs/PNGs */
+  display: inline-flex; /* Ensure both the icon and text are aligned together */
+  align-items: center; /* Vertically center the text and icon */
+  color: #044159;
   display: flex;
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  /* font-family: "Poppins", sans-serif; */
   position: sticky;
+  transition: color 0.3s ease; 
 }
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
+  font-size: 16px; 
+  font-weight: 600; 
+}
+.icon-text svg {
+  fill: currentColor; 
+  width: 20px; 
+  height: 20px; 
+  transition: fill 0.3s ease;
+}
+
+/* Hover effects for nav-link (text and SVG) */
+.nav-link:hover {
+  color: #f95f21; 
+}
+.nav-link:hover .icon-text svg {
+  fill: #f95f21; 
+}
+.nav-link:hover .icon-text {
+  color: #f95f21; 
+}
+
 
 .header-logo {
   color: #044159;
 }
 
+/* ===============
+    HERO BANNER
+=================*/
 .pro {
-  text-decoration: underline;
   font-weight: bold;
-  color: black;
-}
-
-.highlighted-words {
-  font-weight: bold;
-  color: #044159 ;
+  color: #f95f21;
 }
 
 .container-cover {
@@ -35,11 +105,9 @@
   color: white;
 }
 
-.container-cover h1 {
-  color: white;
-}
-
-
+/* ===============
+    'ABOUT ME'
+=================*/
 .img-container {
   border-radius: 50%;
   height: 300px;
@@ -48,24 +116,30 @@
   margin: 0;
 }
 
-hr {
-  border:inset #0D8C8C 2px;
-  border-bottom: none;
-  width: 70%;
-  margin: 100px auto;}
+/* ===============
+     'SKILLS'
+=================*/
 
 
+#skills-divider {
+  background: linear-gradient(45deg, #f95f21, #e56300); /* Custom gradient with #f95f21 as the main color */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /
+  filter: brightness(1.2);       
+}
+
+/* ===============
+    'CONTACT ME'
+=================*/
 .contact-me {
   place-items: center;
   text-align: center;
 }
 
-.btn {
-  background-color: #0D8C8C;
-  color: white;
-  border-color: #044159; 
-}
 
+/* ===============
+      FOOTER
+=================*/
 .footer {
   background:url(./Photos/webpage-background4.jpg);
   background-size:100%;
@@ -74,65 +148,125 @@ hr {
   padding: 0;
 }
 
-/*.nav {
-  background-color: white;
-  /* This is just a placeholder. wondering why this changed the size of the footer. }
-  */
-
-
-.header {
-  display: flex;
-  justify-content: flex-start; /* Default alignment */
-  align-items: center;
-  width: 100%; /* Ensure it takes up the full width */
+.footer svg {
+  fill: black; 
+  transition: fill 0.3s ease; 
 }
 
-/* Center the About Me container on mobile */
-@media (max-width: 767px) {
-  .container.col-xxl-8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.footer a:hover svg {
+  fill: #f95f21; 
+}
+
+
+
+/* ===============
+      SCALING
+=================*/
+/* Scaling for small tablets devices or below */
+@media (max-width: 991.98px) {/* Centering the 'About Me' section */
+  #about-section {
     text-align: center;
   }
+
+   .col-10.col-sm-8.col-lg-6 {/* Centering parent container of image */
+  width: 100%; 
+  max-width: 350px; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
-/* Center the About Me container on mobile */
-@media (max-width: 767px) {
-  .header-text {
-    display: flex;
-    justify-content: center;
+.col-10.col-sm-8.col-lg-6 img {/* Centering the image */
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
+  display: block;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+}
+
+/* Scaling for large mobile devices to small laptop devices for 'Skills' section */
+@media (min-width: 576px) and (max-width: 1280px) {
+  /* Ensure the skills card remains in column layout */
+    #skills-section {
     align-items: center;
+    justify-content: center;
     text-align: center;
   }
-}
 
-/* Default alignment for large screens - already set by Bootstrap */
-.text-end {
-  text-align: right;
-}
-
-/* Media query for screens smaller than 767px (mobile devices) */
-@media (max-width: 767px) {
   .text-end {
-      text-align: center !important; /* Override the text-end on small screens */
-  }
-  }
-
-  .img-container {
-    text-align: right;
+    text-align: center !important;
+    align-items: start;
   }
 
-  /* Media query for screens smaller than 767px (mobile devices) */
+.header-text {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+  #skills-card {
+    flex-direction: column;  /* Stacking the image on top of text */
+    align-items: center; 
+    text-align: center;  
+  }
+ 
+  #skills-card img {
+    width: 100%; 
+    max-width: 150px; 
+    height: auto; 
+    max-height: 100;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-bottom: 20px;
+  }
+  
+  .ms-3 {
+    text-align: center;
+  }
+
+   .container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* For scaling smaller screens (under small tablets) */
 @media (max-width: 767px) {
-  .img-container {
-      text-align: center !important; /* Override the text-end on small screens */
-  }
-  }
-
-    /* Media query for screens smaller than 767px (mobile devices) */
-@media (max-width: 767px) {
+  .container-cover {
+    background-size: auto;
+    background-repeat: round;
+    }
   .contact-me .btn {
-      text-align: center !important; /* Override the text-end on small screens */
+    text-align: center !important; /* Override the text-end on small screens */
+   }
+   .header-logo {
+    display: none;
+   }
   }
+
+/* For scaling smallest screens (mobile devices) */
+@media (max-width: 570px) {
+.left-header {
+  display: none !important;
+}
+
+.nav-pills {
+  justify-content: center;
+}
+
+  .text-end {
+    text-align: center !important;
+    align-items: start;
+  }
+
+.header-text {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
   }
