@@ -50,8 +50,8 @@ hr {
   box-shadow: none;
 }
 .nav-link {
-  display: inline-flex; /* Ensure both the icon and text are aligned together */
-  align-items: center; /* Vertically center the text and icon */
+  display: inline-flex; /* Ensures both the icon and text are aligned together */
+  align-items: center; /* Vertically centers the text and icon */
   color: #044159;
   display: flex;
   align-items: center;
@@ -96,7 +96,7 @@ hr {
 .pro {
   font-weight: bold;
  /* color: #f95f21;*/
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Creates a soft shadow effect */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   color: white; 
 }
 
@@ -124,7 +124,7 @@ hr {
 
 
 #skills-divider {
-  background: linear-gradient(45deg, #f95f21, #e56300); /* Custom gradient with #f95f21 as the main color */
+  background: linear-gradient(45deg, #f95f21, #e56300); /* Gradient with #f95f21 as the main color */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /
   filter: brightness(1.2);       
@@ -190,7 +190,7 @@ hr {
 
 /* Scaling for large mobile devices to small laptop devices for 'Skills' section */
 @media (min-width: 576px) and (max-width: 1280px) {
-  /* Ensure the skills card remains in column layout */
+  /* Ensures the skills card remains in column layout */
     #skills-section {
     align-items: center;
     justify-content: center;
@@ -243,7 +243,7 @@ hr {
     background-repeat: round;
     }
   .contact-me .btn {
-    text-align: center !important; /* Override the text-end on small screens */
+    text-align: center !important; /* Overrides the text-end on small screens */
    }
    .header-logo {
     display: none;
