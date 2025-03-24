@@ -26,3 +26,43 @@ filterSelect.addEventListener('change', function() {
     }
   });
 });
+
+function projectRedirect1() {
+  location.href="https://ericdurban.github.io/Jeri-Urban-Studios/index.html";
+}
+
+function projectRedirect2() {
+  location.href="https://ericdurban.github.io/Simon-Challenge/index.html";
+}
+
+function projectRedirect3() {
+  location.href="https://ericdurban.github.io/LyricHunt/";
+}
+
+function projectRedirect4() {
+  location.href="https://github.com/ericdurban/World-Travel-Tracker/blob/main/README.md";
+}
+
+function projectRedirect5() {
+  location.href="https://ericdurban.github.io/Drum-Kit/index.html";
+}
+
+// function projectRedirect6() {
+//   location.href="#";
+// }
+
+function projectRedirect7() {
+  location.href="https://github.com/ericdurban/To-Do-List/blob/main/README.md";
+}
+
+// function projectRedirect8() {
+//   location.href="#";
+// }
+
+function projectRedirect9() {
+  location.href="https://ericdurban.github.io/Resume/index.html";
+}
+
+// function projectRedirect10() {
+//   location.href="#";
+// }

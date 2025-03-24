@@ -1,13 +1,28 @@
 /* ===============
        BODY
 =================*/
- /* spans for defining important text */
+body {
+  /* font-family: "roboto", sans-serif; */
+} 
+
+/* spans for defining important text */
 .highlighted-words {
   font-weight: bold;
   color: #044159 ;
 }
-.highlighted-words:hover {
+.highlighted-words1 {
+  font-weight: bold;
   color: #f95f21;
+  font-style: italic;
+  /* text-shadow: 1px 1px 2px black; */
+  /* background: linear-gradient(to right, #044159, #0D8C8C,  #f95f21 );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; */
+  /* background: linear-gradient(to right, #044159, transparent);
+  border-radius: 5px; */
+  /* clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); */
+  /* background-color: #0D8C8C; */
+  /* font-family: ; */
 }
 
  /* Section dividers */
@@ -33,6 +48,7 @@ hr {
     color: white;
   }
 
+ 
 /* ===============
        HEADER
 =================*/
@@ -105,6 +121,7 @@ hr {
   background-size:100%;
   background-repeat:no-repeat;
   color: white;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); */
 }
 
 /* ===============
@@ -124,7 +141,7 @@ hr {
 
 
 #skills-divider {
-  background: linear-gradient(45deg, #f95f21, #e56300); /* Gradient with #f95f21 as the main color */
+  background: linear-gradient(45deg, #f95f21, #e56300, #f95f21);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /
   filter: brightness(1.2);       
@@ -133,6 +150,10 @@ hr {
 /* ===============
     'CONTACT ME'
 =================*/
+.col {
+  cursor: pointer;
+}
+
 .contact-me {
   place-items: center;
   text-align: center;

@@ -9,6 +9,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 
         <!-- FAVICON FOR INTERNET TAB -->
         <link rel="apple-touch-icon" sizes="180x180" href="/1. Front End/Lesson 13- Capstone Project 2 (Personal Website)/Icons/apple-touch-icon.png">
@@ -104,8 +108,8 @@
               </div>
               <div class="col-lg-6">
                 <h1 class="header-text display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
-                <p class="lead">I'm new to web development and have thoroughly enjoyed diving into the world of coding! While I'm still early in my programming journey, I've already
-                   started building a <span class="highlighted-words">diverse portfolio of projects</span> that showcase my skills. The purpose of this website is to highlight 
+                <p class="lead">I have loved diving into the world of coding and while I'm still early in my programming journey, I've already
+                   started building a <span class="highlighted-words1">diverse portfolio of projects</span> that showcase my skills. The purpose of this website is to highlight 
                    those projects, and I hope you take a look below and enjoy them as much as I have! </p>
                    <p class="lead">I'm excited to connect with others, learn from 
                     new experiences, and continue improving my abilities as I grow in this field.</p>
@@ -123,7 +127,7 @@
               <div class="col-md-3 order-md-4 d-flex flex-column align-items-end gap-2" id="text-section">
                 <div class="text-end">
                   <h1 class="header-text display-5 fw-bold text-body-emphasis lh-1 mb-3">Skills</h1>
-                  <p class="lead text-end">I'm <span class="highlighted-words">proficient in a range of software tools</span> essential for web development, with a strong foundation in 
+                  <p class="lead text-end">I'm <span class="highlighted-words1">proficient in a range of software tools</span> essential for web development, with a strong foundation in 
                     HTML, CSS, and JavaScript to build responsive, user-friendly interfaces.
                 </p>
               </div>
@@ -291,7 +295,7 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
             <!-- 1ST PROJECT -->
-            <div class="col" data-type="frontend">
+            <div class="col" onclick="projectRedirect1()" data-type="frontend">
               <div class="card shadow-sm">
                 <img src="./Photos/Jeri Urban Studio Snapshot.PNG" class="card-img-top" alt="Client website snapshot." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -310,7 +314,7 @@
             </div>
 
             <!-- 2ND PROJECT -->
-            <div class="col" data-type="frontend">
+            <div class="col" onclick="projectRedirect2()" data-type="frontend">
               <div class="card shadow-sm">
                 <img src="./Photos/Simon Game Challenge Snapshot.PNG" class="card-img-top" alt="Simon game website." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -330,7 +334,7 @@
 
             
             <!-- 3RD PROJECT -->
-            <div class="col" data-type="backend">
+            <div class="col" onclick="projectRedirect3()" data-type="backend">
               <div class="card shadow-sm">
                 <img src="./Photos/LyricHunt-snapshot.PNG" class="card-img-top" alt="Lyric generator website." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -349,7 +353,7 @@
             </div>
 
             <!-- 4TH PROJECT -->
-            <div class="col" data-type="backend">
+            <div class="col" onclick="projectRedirect4()" data-type="backend">
               <div class="card shadow-sm">
                 <img src="./Photos/WorldTracker-Snapshot.PNG" class="card-img-top" alt="World Tracker website." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -369,7 +373,7 @@
 
             
             <!-- 5TH PROJECT -->
-            <div class="col" data-type="frontend">
+            <div class="col" onclick="projectRedirect5()" data-type="frontend">
               <div class="card shadow-sm">
                 <img src="./Photos/DrumKit Snapshot.PNG" class="card-img-top" alt="Drum kit simulation website." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -388,7 +392,7 @@
             </div>
 
             <!-- 6TH PROJECT -->
-            <div class="col" data-type="backend">
+            <div class="col" onclick="projectRedirect6()" data-type="backend">
               <div class="card shadow-sm">
                 <img src="./Photos/Blog App Snapshot.PNG" class="card-img-top" alt="Blog website." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -408,7 +412,7 @@
             </div>
 
             <!-- 7TH PROJECT -->
-            <div class="col" data-type="backend">
+            <div class="col" onclick="projectRedirect7()" data-type="backend">
               <div class="card shadow-sm">
                 <img src="./Photos/To-Do-List Snapshot.PNG" class="card-img-top" alt="To-do-list website." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -427,7 +431,7 @@
             </div>
 
             <!-- 8TH PROJECT -->
-            <div class="col" data-type="backend">
+            <div class="col" onclick="projectRedirect8()" data-type="backend">
               <div class="card shadow-sm">
                 <img src="./Photos/Book Review Snapshot.PNG" class="card-img-top" alt="Book review website." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -447,7 +451,7 @@
             </div>
 
             <!-- 9TH PROJECT -->
-            <div class="col" data-type="frontend">
+            <div class="col" onclick="projectRedirect9()" data-type="frontend">
               <div class="card shadow-sm">
                 <img src="./Photos/Resume-snapshot.PNG" class="card-img-top" alt="Resume." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -465,7 +469,7 @@
             </div>
     
             <!-- 10TH PROJECT -->
-            <div class="col" data-type="frontend">
+            <div class="col" onclick="projectRedirect10()" data-type="frontend">
               <div class="card shadow-sm">
                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" 
                 preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -489,7 +493,7 @@
             </div>
 
             <!-- 11TH PROJECT (NEED TO COMPLETE)
-            <div class="col" data-type="backend">
+            <div class="col" onclick="projectRedirect11()" data-type="backend">
               <div class="card shadow-sm">
                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" 
                 preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -520,7 +524,7 @@
       <!-- CONTACT ME -->
       <div class="contact-me" id="contact-section">
         <h1 class="header-text display-5 fw-bold text-body-emphasis lh-1 mb-3">Contact Me</h1>
-        <p class="contact-message">Let me help you <span class="highlighted-words">create your vision</span>  into reality.</p>
+        <p class="contact-message">Let me help you <span class="highlighted-words1">create your vision</span>  into reality.</p>
         <a class="btn" href="mailto:ericdurban32@gmail.com">SEND AN EMAIL</a>
       </div>
 
