@@ -133,9 +133,41 @@ function projectRedirect2() {
   location.href="https://ericdurban.github.io/Simon-Challenge/index.html";
 }
 
-function projectRedirect3() {
-  location.href="https://ericdurban.github.io/LyricHunt/";
+// function projectRedirect3() {
+//   location.href="https://ericdurban.github.io/LyricHunt/";
+// }
+
+// Function to open the modal and load the YouTube video
+function openModal() {
+  var modal = document.getElementById("videoModal");
+  var iframe = document.getElementById("videoFrame");
+  iframe.src = "https://www.youtube.com/embed/zJTLkTQSkos"; // Embed YouTube video
+  
+  modal.style.display = "block";
 }
+
+    // Function to close the modal and stop the video
+    function closeModal() {
+      var modal = document.getElementById("videoModal");
+      var iframe = document.getElementById("videoFrame");
+      iframe.src = ""; // Stop the video when closing the modal by removing the iframe source
+      
+      modal.style.display = "none";
+    }
+
+    // Close the modal if the user clicks outside of it
+    window.onclick = function(event) {
+      var modal = document.getElementById("videoModal");
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+
+        // Prevent the default behavior of the 'View' button and open the modal instead
+        document.getElementById('viewBtn').addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the link from navigating
+          openModal(); // Open the modal
+        });
 
 function projectRedirect4() {
   location.href="https://github.com/ericdurban/World-Travel-Tracker/blob/main/README.md";

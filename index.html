@@ -368,7 +368,7 @@
 
             
             <!-- 3RD PROJECT -->
-            <div class="col" onclick="projectRedirect3()" data-type="backend">
+            <div class="col" onclick="openModal()" data-type="backend">
               <div class="card shadow-sm">
                 <img src="./Photos/LyricHunt-snapshot.PNG" class="card-img-top" alt="Lyric generator website." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -378,11 +378,23 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="https://ericdurban.github.io/LyricHunt/" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                      <a href="#projects-section" type="button" class="btn btn-sm btn-outline-secondary">View</a>
                     </div>
                     <small class="text-body-secondary">Back-End</small>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <!-- 3RD PROJECT MODAL -->
+            <div id="videoModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>LyricHunt</h2>
+                <p>Due to the need for specific technologies and additional setup, this webpage isn't hosted online. Instead, I've created this video to demonstrate how the application functions. 
+                  For those with a technical background who are interested in viewing the code or running the project locally, feel free to click the link 
+                  <a href="https://github.com/ericdurban/LyricHunt">here</a></p>
+                <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
 
