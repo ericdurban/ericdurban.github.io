@@ -1,6 +1,12 @@
 /* ===============
        BODY
 =================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   /* font-family: "roboto", sans-serif; */
 } 
@@ -114,6 +120,8 @@ hr {
  /* color: #f95f21;*/
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   color: white; 
+  margin-left: 0.2em;
+  margin-right: 0.2em;
 }
 
 .container-cover {
@@ -121,7 +129,56 @@ hr {
   background-size:100%;
   background-repeat:no-repeat;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); */
+}
+
+/* Rotating Title- Credit to https://codepen.io/alphardex/pen/WNNVJeZ with a few tweeks */
+.rotating-text {
+  color: white;
+  font-weight: 600;
+  transform: translateX(-80px); 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.rotating-text p {
+  display: inline-flex;
+  margin: 0;
+  vertical-align: top;
+  font-weight: 600;
+  font-size: 30px;
+  align-items: center;
+}
+
+.rotating-text .word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.rotating-text .word .letter {
+  transform-origin: center center 25px;}
+
+.rotating-text .word .letter.out {
+      transform: rotateX(90deg);
+      transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+    }
+
+.rotating-text .word .letter.in {
+      transition: 0.38s ease;
+    }
+
+.rotating-text .word .letter.behind {
+      transform: rotateX(-90deg);
 }
 
 /* ===============
@@ -139,12 +196,80 @@ hr {
      'SKILLS'
 =================*/
 
+/* Slideshow for images */
+#text-section {
+  text-align: center;
+  overflow: hidden;
+}
+
+/* slideshow for frontend */
+.slideshow {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.slideshow::after,
+.slideshow::before {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+ .slideshow::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.slideshow::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.slideshow:hover .slideshow-reel{
+  animation-play-state: paused;
+}
+
+.slideshow-reel {
+  display: inline-block;  
+  animation: 25s slide infinite linear;
+}
+
+.slideshow-reel img {
+  width: 4%;
+  height: 70px; 
+  margin: 0 40px; 
+}
+/* 24 images, 25 slides.  */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-149%);
+  }
+}
 
 #skills-divider {
   background: linear-gradient(45deg, #f95f21, #e56300, #f95f21);
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
   filter: brightness(1.2);       
+}
+
+#skills-card p {
+  padding-top: 5px;
+  color: #777;
+}
+
+/* ===============
+    'PROJECTS'
+=================*/
+.card-text {
+  color: #777;
 }
 
 /* ===============
@@ -207,21 +332,18 @@ hr {
   margin-left: auto; 
   margin-right: auto; 
 }
+
+#skills-section {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 }
 
 /* Scaling for large mobile devices to small laptop devices for 'Skills' section */
 @media (min-width: 576px) and (max-width: 1280px) {
   /* Ensures the skills card remains in column layout */
-    #skills-section {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
 
-  .text-end {
-    text-align: center !important;
-    align-items: start;
-  }
 
 .header-text {
   align-items: center;
@@ -229,12 +351,6 @@ hr {
   text-align: center;
 }
 
-  #skills-card {
-    flex-direction: column;  /* Stacking the image on top of text */
-    align-items: center; 
-    text-align: center;  
-  }
- 
   #skills-card img {
     width: 100%; 
     max-width: 150px; 
@@ -269,6 +385,9 @@ hr {
    .header-logo {
     display: none;
    }
+   .nav-pills {
+    justify-content: center;
+  }
   }
 
 /* For scaling smallest screens (mobile devices) */
@@ -277,19 +396,21 @@ hr {
   display: none !important;
 }
 
-.nav-pills {
-  justify-content: center;
-}
-
-  .text-end {
-    text-align: center !important;
-    align-items: start;
-  }
-
 .header-text {
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+.rotating-text {
+  font-size: 8vw;
+}
+
+.rotating-text p {
+  font-size: 20px; /* Adjust font size for mobile */
+}
+
+.rotating-text .word {
+  max-width: 100%; /* Ensure words don't exceed container width */
+}
   }
