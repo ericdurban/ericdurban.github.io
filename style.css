@@ -209,7 +209,6 @@ hr {
       top: 0;
       width: 100%;
       height: 100%;
-      overflow: auto;
       background-color: rgba(0,0,0,0.4); 
       padding-top: 60px;
     }
@@ -226,9 +225,8 @@ hr {
 
         .pdf-frame{
           width: 100%;
-          height: 400px;
+          height: 60vh;
           border: none;
-          overflow: auto;
         }
         
             /* The Close Button */
@@ -302,7 +300,7 @@ hr {
         transform: translateX(0);
       }
       to {
-        transform: translateX(-148%);
+        transform: translateX(-142.6%);
       }
     }
 
@@ -326,47 +324,20 @@ hr {
   color: #777;
 }
 
-/* MODAL FOR PROJECTS */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
+/* MODAL FOR PROJECTS -- modal box, content, and close button
+css is applied in code under skills*/
+.video-container {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
-  padding-top: 60px;
+  padding-top: 56.25%;
+  overflow: hidden;
 }
 
-    /* Modal Content */
-    .modal-content {
-      background-color: #fefefe;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-      max-width: 800px;
-      position: relative;
-    }
-
-        /* Close Button */
-        .close {
-          color: #aaa;
-          font-size: 28px;
-          font-weight: bold;
-          position: absolute;
-          top: 10px;
-          right: 20px;
-        }
-
-        .close:hover,
-        .close:focus {
-          color: black;
-          text-decoration: none;
-          cursor: pointer;
-        }
-
+#videoFrame {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /* ===============
     'CONTACT ME'
@@ -516,8 +487,12 @@ hr {
   max-width: 100%; /* Ensure words don't exceed container width */
 }
 .modal-content {
-  width: 95%; 
+  width: 90%; 
+  max-width: none; 
   padding: 10px;
+}
+.pdf-frame {
+  height: 50vh;
 }
 .close {
   font-size: 24px; 

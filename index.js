@@ -78,15 +78,21 @@ var btn = document.getElementById("modalTrigger");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+let isModalOpen = false; // Add a flag to prevent multiple triggers
+
 // When the user clicks the button, open the modal
 btn.onclick = function() {
+  if (!isModalOpen) {
     modal.style.display = "block";
+    isModalOpen = true;
 }
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
-}
+  modal.style.display = "none";
+  isModalOpen = false;
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -133,32 +139,28 @@ function projectRedirect2() {
   location.href="https://ericdurban.github.io/Simon-Challenge/index.html";
 }
 
-// function projectRedirect3() {
-//   location.href="https://ericdurban.github.io/LyricHunt/";
-// }
-
 // Function to open the modal and load the YouTube video
 function openModal() {
-  var modal = document.getElementById("videoModal");
+  var videoModal = document.getElementById("videoModal");
   var iframe = document.getElementById("videoFrame");
   iframe.src = "https://www.youtube.com/embed/zJTLkTQSkos"; // Embed YouTube video
   
-  modal.style.display = "block";
+  videoModal.style.display = "block";
 }
 
     // Function to close the modal and stop the video
     function closeModal() {
-      var modal = document.getElementById("videoModal");
+      var videoModal = document.getElementById("videoModal");
       var iframe = document.getElementById("videoFrame");
       iframe.src = ""; // Stop the video when closing the modal by removing the iframe source
       
-      modal.style.display = "none";
+      videoModal.style.display = "none";
     }
 
     // Close the modal if the user clicks outside of it
     window.onclick = function(event) {
-      var modal = document.getElementById("videoModal");
-      if (event.target == modal) {
+      var videoModal = document.getElementById("videoModal");
+      if (event.target == videoModal) {
         closeModal();
       }
     }
