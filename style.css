@@ -210,8 +210,7 @@ hr {
       width: 100%;
       height: 100%;
       overflow: auto;
-      background-color: rgb(0,0,0); /* Black w/ opacity */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      background-color: rgba(0,0,0,0.4); 
       padding-top: 60px;
     }
         /* Modal Content */
@@ -220,15 +219,28 @@ hr {
           margin: 5% auto;
           padding: 20px;
           border: 1px solid #888;
-          width: 80%; /* Could be more or less, depending on screen size */
+          width: 85%; /* Could be more or less, depending on screen size */
+          max-width: 800px;
+          position: relative;
+        }
+
+        .pdf-frame{
+          width: 100%;
+          height: 400px;
+          border: none;
+          overflow: auto;
         }
         
             /* The Close Button */
             .close {
-              color: #aaa;
+              color: #f95f21 !important;
               float: right;
               font-size: 28px;
               font-weight: bold;
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              cursor: pointer;
             }
 
             .close:hover,
@@ -471,7 +483,13 @@ hr {
    }
    .nav-pills {
     justify-content: center;
-  }
+    }
+  .modal-content {
+    width: 90%; 
+    }
+    .pdf-frame {
+    height: 60vh; 
+    }
   }
 
 /* For scaling smallest screens (mobile devices) */
@@ -497,4 +515,14 @@ hr {
 .rotating-text .word {
   max-width: 100%; /* Ensure words don't exceed container width */
 }
+.modal-content {
+  width: 95%; 
+  padding: 10px;
+}
+.close {
+  font-size: 24px; 
+  top: 5px;
+  right: 5px;
+}
+
   }
