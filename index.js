@@ -136,7 +136,7 @@ function projectRedirect1() {
 }
 
 function projectRedirect2() {
-  location.href="https://ericdurban.github.io/Simon-Challenge/index.html";
+  location.href="https://ericdurban.github.io/Alphabet/index.html";
 }
 
 // Function to open the modal and load the YouTube video
@@ -176,7 +176,7 @@ function projectRedirect4() {
 }
 
 function projectRedirect5() {
-  location.href="https://ericdurban.github.io/Drum-Kit/index.html";
+  location.href="https://ericdurban.github.io/Simon-Challenge/index.html";
 }
 
 // function projectRedirect6() {
