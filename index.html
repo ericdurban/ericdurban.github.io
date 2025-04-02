@@ -8,13 +8,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         
 
         <!-- FAVICON FOR INTERNET TAB -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/1. Front End/Lesson 13- Capstone Project 2 (Personal Website)/Icons/apple-touch-icon.png?">
-        <link rel="icon" type="image/png" sizes="32x32" href="/1. Front End/Lesson 13- Capstone Project 2 (Personal Website)/Icons/favicon-32x32.png?">
-        <link rel="icon" type="image/png" sizes="16x16" href="/1. Front End/Lesson 13- Capstone Project 2 (Personal Website)/Icons/favicon-16x16.png?">
-        <link rel="manifest" href="/1. Front End/Lesson 13- Capstone Project 2 (Personal Website)/Icons/site.webmanifest?">
+        <link rel="apple-touch-icon" sizes="180x180" href="./Icons/apple-touch-icon.png?">
+        <link rel="icon" type="image/png" sizes="32x32" href="./Icons/favicon-32x32.png?">
+        <link rel="icon" type="image/png" sizes="16x16" href="./Icons/favicon-16x16.png?">
+        <link rel="manifest" href="./Icons/site.webmanifest?">
     </head>
     <body>
                
@@ -26,6 +27,10 @@
                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
                 <span class="header-logo fs-4">EU</span>
               </a>
+
+              <div class="menu" id="menu">
+                <i class="fa-solid fa-bars"></i>
+              </div>
         
               <ul class="nav nav-pills">
 
@@ -319,7 +324,7 @@
           <!-- FILTER DROP DOWN MENU -->
           <div class="container mb-4">
             <select id="project-filter" class="form-select">
-              <option value="" disabled selected>Select to filter projects</option> <!-- Placeholder option -->
+              <option value="" disabled selected>Select to filter projects</option> 
               <option value="all">All</option>
               <option value="frontend">Front-End</option>
               <option value="backend">Back-End</option>
@@ -537,30 +542,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- 11TH PROJECT (NEED TO COMPLETE)
-            <div class="col" onclick="projectRedirect11()" data-type="backend">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" 
-                preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Joke Simulator</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" text-anchor="middle" dy=".3em">Joke Simulator</text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    In the mood for a joke? With the help of a random joke <span class="highlighted-words">API</span>, this app brings a new laugh to your day 
-                    whenever you need it!
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    </div>
-                    <small class="text-body-secondary">Back-End</small>
-                  </div>
-                </div>
-              </div>
-            </div>-->
 
           </div>
         </div>

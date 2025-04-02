@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-body {
-  /* font-family: "roboto", sans-serif; */
-} 
-
-/* spans for defining important text */
 .highlighted-words {
   font-weight: bold;
   color: #044159 ;
@@ -20,15 +15,6 @@ body {
   font-weight: bold;
   color: #f95f21;
   font-style: italic;
-  /* text-shadow: 1px 1px 2px black; */
-  /* background: linear-gradient(to right, #044159, #0D8C8C,  #f95f21 );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; */
-  /* background: linear-gradient(to right, #044159, transparent);
-  border-radius: 5px; */
-  /* clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); */
-  /* background-color: #0D8C8C; */
-  /* font-family: ; */
 }
 
  /* Section dividers */
@@ -58,11 +44,16 @@ hr {
 /* ===============
        HEADER
 =================*/
-.container-header {
-  position: sticky;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px 5px 100px;
+  background-color: white;
+  position: relative;
+  z-index: 10; 
 }
 
-/* Nav Bar */
 .nav-button .btn {
   background-color: #044159;
   color: white;
@@ -72,14 +63,11 @@ hr {
   box-shadow: none;
 }
     .nav-link {
-      display: inline-flex; /* Ensures both the icon and text are aligned together */
-      align-items: center; /* Vertically centers the text and icon */
       color: #044159;
       display: flex;
       align-items: center;
       gap: 8px;
       text-decoration: none;
-      position: sticky;
       transition: color 0.3s ease; 
     }
         .icon-text {
@@ -96,7 +84,6 @@ hr {
           transition: fill 0.3s ease;
         }
 
-    /* Hover effects for nav-link (text and SVG) */
     .nav-link:hover {
       color: #f95f21; 
     }
@@ -116,7 +103,6 @@ hr {
 =================*/
 .pro {
   font-weight: bold;
- /* color: #f95f21;*/
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   color: white; 
   margin-left: 0.2em;
@@ -131,7 +117,6 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); */
 }
 
 /* Rotating Title- Credit to https://codepen.io/alphardex/pen/WNNVJeZ with a few tweeks */
@@ -202,9 +187,9 @@ hr {
 }
     /* The Modal Background */
     .modal {
-      display: none; /* Hidden by default */
+      display: none; 
       position: fixed;
-      z-index: 1; /* Sit on top */
+      z-index: 1; 
       left: 0;
       top: 0;
       width: 100%;
@@ -218,7 +203,7 @@ hr {
           margin: 5% auto;
           padding: 20px;
           border: 1px solid #888;
-          width: 85%; /* Could be more or less, depending on screen size */
+          width: 85%; 
           max-width: 800px;
           position: relative;
         }
@@ -231,7 +216,7 @@ hr {
         
             /* The Close Button */
             .close {
-              color: #f95f21 !important;
+              color: #f95f21;
               float: right;
               font-size: 28px;
               font-weight: bold;
@@ -378,62 +363,77 @@ css is applied in code under skills*/
 /* ===============
       SCALING
 =================*/
+@media (min-width: 991.98px) {
+  .menu {
+    display: none;
+  }
+}
+
 /* Scaling for small tablets devices or below */
 @media (max-width: 991.98px) {/* Centering the 'About Me' section */
+  .header-logo {
+    display: none;
+   }
+   .left-header {
+    display: none;
+   }
+   .container-header {
+    display: flex;
+    justify-content: right;
+    padding-right: 0px;
+    position: relative;
+   }
+   .menu {
+    display: block;
+    color: #044159;
+    cursor: pointer;
+    font-size: 30px;
+  }
+        .nav-pills {   /* hidden hamburger menu */
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 50px;
+          right: 0;
+          height: 100vh;
+          background-color: #333;
+          width: 100%;
+          padding: 0px;
+          gap: 10px;
+          list-style: none;
+          transition: right 0.3s ease-in-out; 
+        }
+        .nav-link {
+          color: #0D8C8C;
+        }
+        .nav-button .btn {
+          display: none;
+        }
+        .nav-pills.active {
+          display: flex;
+        }
+
   #about-section {
     text-align: center;
   }
 
-   .col-10.col-sm-8.col-lg-6 {/* Centering parent container of image */
-  width: 100%; 
-  max-width: 350px; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-.col-10.col-sm-8.col-lg-6 img {/* Centering the image */
-  width: 100%; 
-  max-width: 300px; 
-  height: auto; 
-  display: block;
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-#skills-section {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-}
-
-/* Scaling for large mobile devices to small laptop devices for 'Skills' section */
-@media (min-width: 576px) and (max-width: 1280px) {
-  /* Ensures the skills card remains in column layout */
-
-
-.header-text {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-  #skills-card img {
+  .col-10.col-sm-8.col-lg-6 {/* Centering parent container of profile image */
     width: 100%; 
-    max-width: 150px; 
+    max-width: 350px; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+
+  .col-10.col-sm-8.col-lg-6 img {/* Centering the profile image */
+    width: 100%; 
+    max-width: 300px; 
     height: auto; 
-    max-height: 100;
     display: block;
     margin-left: auto; 
     margin-right: auto; 
-    padding-bottom: 20px;
-  }
-  
-  .ms-3 {
-    text-align: center;
   }
 
-   .container {
+  #skills-section {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -442,21 +442,23 @@ css is applied in code under skills*/
 
 /* For scaling smaller screens (under small tablets) */
 @media (max-width: 767px) {
-  .container-cover {
+   .container-cover {
     background-size: auto;
     background-repeat: round;
     }
-  .contact-me .btn {
-    text-align: center !important; /* Overrides the text-end on small screens */
-   }
-   .header-logo {
-    display: none;
-   }
-   .nav-pills {
-    justify-content: center;
+    .rotating-text {
+      font-size: 8vw;
     }
-  .modal-content {
+        .rotating-text p {
+          font-size: 20px; 
+        }
+        .rotating-text .word {
+          max-width: 100%; /* Ensure words don't exceed container width */
+        }
+    .modal-content {
     width: 90%; 
+    max-width: none; 
+    padding: 10px;
     }
     .pdf-frame {
     height: 60vh; 
@@ -465,32 +467,6 @@ css is applied in code under skills*/
 
 /* For scaling smallest screens (mobile devices) */
 @media (max-width: 570px) {
-.left-header {
-  display: none !important;
-}
-
-.header-text {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.rotating-text {
-  font-size: 8vw;
-}
-
-.rotating-text p {
-  font-size: 20px; /* Adjust font size for mobile */
-}
-
-.rotating-text .word {
-  max-width: 100%; /* Ensure words don't exceed container width */
-}
-.modal-content {
-  width: 90%; 
-  max-width: none; 
-  padding: 10px;
-}
 .pdf-frame {
   height: 50vh;
 }
@@ -499,5 +475,4 @@ css is applied in code under skills*/
   top: 5px;
   right: 5px;
 }
-
   }
