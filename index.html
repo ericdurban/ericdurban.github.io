@@ -324,7 +324,7 @@
           <!-- FILTER DROP DOWN MENU -->
           <div class="container mb-4">
             <select id="project-filter" class="form-select">
-              <option value="" disabled selected>Select to filter projects</option> 
+              <option value="all" disabled selected>Select to filter projects</option> 
               <option value="all">All</option>
               <option value="frontend">Front-End</option>
               <option value="backend">Back-End</option>
@@ -372,7 +372,7 @@
             </div>
 
             <!-- 3RD PROJECT -->
-            <div class="col" onclick="openModal()" data-type="backend">
+            <div class="col" onclick="openModal3()" data-type="backend">
               <div class="card shadow-sm">
                 <img src="./Photos/LyricHunt-snapshot.PNG" class="card-img-top" alt="Lyric generator website." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -391,19 +391,19 @@
             </div>
 
             <!-- 3RD PROJECT MODAL -->
-            <div id="videoModal" class="modal">
+            <div id="videoModal3" class="modal">
               <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
+                <span class="close" onclick="closeModal(3)">&times;</span>
                 <h2>LyricHunt</h2>
                 <p>Due to the need for specific technologies and additional setup, this webpage isn't hosted online. Instead, I've created this video to demonstrate how the application functions. 
                   For those with a technical background who are interested in viewing the code or running the project locally, feel free to click the link 
                   <a href="https://github.com/ericdurban/LyricHunt">here</a></p>
-                <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="videoFrame3" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
 
             <!-- 4TH PROJECT -->
-            <div class="col" onclick="projectRedirect4()" data-type="backend">
+            <div class="col" onclick="openModal4()" data-type="backend">
               <div class="card shadow-sm">
                 <img src="./Photos/WorldTracker-Snapshot.PNG" class="card-img-top" alt="World Tracker website." height="225" style="object-fit: cover;">
                 <div class="card-body">
@@ -413,7 +413,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="https://github.com/ericdurban/World-Travel-Tracker/blob/main/README.md" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                      <a href="projects-section" type="button" class="btn btn-sm btn-outline-secondary">View</a>
                     </div>
                     <small class="text-body-secondary">Back-End</small>
                   </div>
@@ -421,7 +421,18 @@
               </div>
             </div>
 
-            
+            <!-- 4TH PROJECT MODAL -->
+            <div id="videoModal4" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal(4)">&times;</span>
+                <h2>World Travel Tracker</h2>
+                <p>Due to the need for specific technologies and additional setup, this webpage isn't hosted online. Instead, I've created this video to demonstrate how the application functions. 
+                  For those with a technical background who are interested in viewing the code or running the project locally, feel free to click the link 
+                  <a href="https://github.com/ericdurban/World-Travel-Tracker/blob/main/README.md">here</a></p>
+                <iframe id="videoFrame4" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
             <!-- 5TH PROJECT -->
             <div class="col" onclick="projectRedirect5()" data-type="frontend">
               <div class="card shadow-sm">
@@ -522,12 +533,7 @@
             <!-- 10TH PROJECT -->
             <div class="col" onclick="projectRedirect10()" data-type="frontend">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" 
-                preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Pokedex</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" text-anchor="middle" dy=".3em">Pokedex</text>
-                </svg>
+                <img src="./Photos/work-in-progress-screen.jpg" class="card-img-top" alt="Resume." height="225" style="object-fit: cover;">
                 <div class="card-body">
                   <p class="card-text">
                     Collaboration project with another software developer utilizing <span class="highlighted-words">React framework</span>. 

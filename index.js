@@ -87,7 +87,7 @@ setInterval(rotateText, 4000); // Rotate every 4 seconds.
 //Course Certificate PDF Modal//
 ////////////////////////////////
 var modal = document.getElementById("myModal");
-var btn = document.getElementById("modalTrigger");
+var btn = document.getElementById("modalTrigger"); 
 var span = document.getElementsByClassName("close")[0];
 
 let isModalOpen = false; // Add a flag to prevent multiple triggers.
@@ -144,36 +144,39 @@ function projectRedirect2() {
   location.href="https://ericdurban.github.io/Alphabet/index.html";
 }
 
-function openModal() {
-  var videoModal = document.getElementById("videoModal");
-  var iframe = document.getElementById("videoFrame");
+function openModal3() {
+  var videoModal = document.getElementById("videoModal3");
+  var iframe = document.getElementById("videoFrame3");
   iframe.src = "https://www.youtube.com/embed/zJTLkTQSkos"; 
   
   videoModal.style.display = "block";
 }
 
-    function closeModal() {
-      var videoModal = document.getElementById("videoModal");
-      var iframe = document.getElementById("videoFrame");
-      iframe.src = ""; // Stop the video when closing the modal by removing the iframe source
-      videoModal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-      var videoModal = document.getElementById("videoModal");
-      if (event.target == videoModal) {
-        closeModal();
-      }
-    }
-        // Prevent the default behavior of the 'View' button and open the modal instead
-        document.getElementById('viewBtn').addEventListener('click', function(event) {
-          event.preventDefault(); // Prevent the link from navigating
-          openModal(); 
-        });
-
-function projectRedirect4() {
-  location.href="https://github.com/ericdurban/World-Travel-Tracker/blob/main/README.md";
+function openModal4() {
+  var videoModal = document.getElementById("videoModal4");
+  var iframe = document.getElementById("videoFrame4");
+  iframe.src = "https://www.youtube.com/embed/FJX6Quw593I?si=BIxQp2yPQZH2BCfl"; 
+  
+  videoModal.style.display = "block";
 }
+
+function closeModal(modalNumber) {
+  var videoModal = document.getElementById("videoModal" + modalNumber);
+  var iframe = document.getElementById("videoFrame" + modalNumber);
+  iframe.src = ""; // Stop the video when closing the modal by removing the iframe source
+  videoModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  var videoModal3 = document.getElementById("videoModal3");
+  var videoModal4 = document.getElementById("videoModal4");
+
+  if (event.target == videoModal3) {
+    closeModal(3);
+  } else if (event.target == videoModal4) {
+    closeModal(4);
+  }
+};
 
 function projectRedirect5() {
   location.href="https://ericdurban.github.io/Simon-Challenge/index.html";
@@ -186,3 +189,9 @@ function projectRedirect7() {
 function projectRedirect9() {
   location.href="https://ericdurban.github.io/Resume/index.html";
 }
+
+    // Prevent the default behavior of the 'View' button and open the modal instead
+    document.getElementById('viewBtn').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the link from navigating
+      openModal(); 
+    });
