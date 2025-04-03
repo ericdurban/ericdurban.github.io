@@ -160,6 +160,14 @@ function openModal4() {
   videoModal.style.display = "block";
 }
 
+function openModal6() {
+  var videoModal = document.getElementById("videoModal6");
+  var iframe = document.getElementById("videoFrame6");
+  iframe.src = "https://www.youtube.com/embed/iDw9brB-wS8?si=NupV2F5Y65I5LQ0m"; 
+  
+  videoModal.style.display = "block";
+}
+
 function closeModal(modalNumber) {
   var videoModal = document.getElementById("videoModal" + modalNumber);
   var iframe = document.getElementById("videoFrame" + modalNumber);
@@ -178,16 +186,12 @@ window.onclick = function(event) {
   }
 };
 
-function projectRedirect5() {
-  location.href="https://ericdurban.github.io/Simon-Challenge/index.html";
-}
-
-function projectRedirect7() {
-  location.href="https://github.com/ericdurban/To-Do-List/blob/main/README.md";
+function projectRedirect8() {
+  location.href="https://ericdurban.github.io/Resume/index.html";
 }
 
 function projectRedirect9() {
-  location.href="https://ericdurban.github.io/Resume/index.html";
+  location.href="https://ericdurban.github.io/Simon-Challenge/index.html";
 }
 
     // Prevent the default behavior of the 'View' button and open the modal instead
