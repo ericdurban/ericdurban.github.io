@@ -160,6 +160,14 @@ function openModal4() {
   videoModal.style.display = "block";
 }
 
+function openModal5() {
+  var videoModal = document.getElementById("videoModal5");
+  var iframe = document.getElementById("videoFrame5");
+  iframe.src = "https://www.youtube.com/embed/cbrCycxbkPI?si=eNCWWyWdd1mZpCh6"; 
+  
+  videoModal.style.display = "block";
+}
+
 function openModal6() {
   var videoModal = document.getElementById("videoModal6");
   var iframe = document.getElementById("videoFrame6");
