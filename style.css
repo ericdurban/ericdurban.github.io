@@ -433,7 +433,7 @@ css is applied in code under skills*/
     margin-right: auto; 
   }
 
-  #skills-section {
+  #skills-section, #projects-section {
     align-items: center;
     justify-content: center;
     text-align: center;
