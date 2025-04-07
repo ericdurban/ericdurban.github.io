@@ -152,18 +152,14 @@ function openModal3() {
   videoModal.style.display = "block";
 }
 
-function openModal4() {
-  var videoModal = document.getElementById("videoModal4");
-  var iframe = document.getElementById("videoFrame4");
-  iframe.src = "https://www.youtube.com/embed/FJX6Quw593I?si=BIxQp2yPQZH2BCfl"; 
-  
-  videoModal.style.display = "block";
+function projectRedirect4() {
+  location.href="https://github.com/ericdurban/The-Rep-Calculator";
 }
 
 function openModal5() {
   var videoModal = document.getElementById("videoModal5");
   var iframe = document.getElementById("videoFrame5");
-  iframe.src = "https://www.youtube.com/embed/cbrCycxbkPI?si=eNCWWyWdd1mZpCh6"; 
+  iframe.src = "https://www.youtube.com/embed/FJX6Quw593I?si=BIxQp2yPQZH2BCfl"; 
   
   videoModal.style.display = "block";
 }
@@ -171,6 +167,14 @@ function openModal5() {
 function openModal6() {
   var videoModal = document.getElementById("videoModal6");
   var iframe = document.getElementById("videoFrame6");
+  iframe.src = "https://www.youtube.com/embed/cbrCycxbkPI?si=eNCWWyWdd1mZpCh6"; 
+  
+  videoModal.style.display = "block";
+}
+
+function openModal7() {
+  var videoModal = document.getElementById("videoModal7");
+  var iframe = document.getElementById("videoFrame7");
   iframe.src = "https://www.youtube.com/embed/iDw9brB-wS8?si=NupV2F5Y65I5LQ0m"; 
   
   videoModal.style.display = "block";
@@ -194,11 +198,11 @@ window.onclick = function(event) {
   }
 };
 
-function projectRedirect8() {
+function projectRedirect9() {
   location.href="https://ericdurban.github.io/Resume/index.html";
 }
 
-function projectRedirect9() {
+function projectRedirect10() {
   location.href="https://ericdurban.github.io/Simon-Challenge/index.html";
 }
 
