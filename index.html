@@ -20,21 +20,21 @@
     <body>
                
           <!-- HEADER -->
-          <div class="container-header" id="header-section">
+          <section class="container-header">
             <header class="d-flex flex-wrap justify-content-center py-2 border-bottom">
 
-              <a class="left-header d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              <div class="left-header d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap" aria-label="website logo"></use></svg>
                 <span class="header-logo fs-4">EU</span>
-              </a>
+              </div>
 
-              <div class="menu" id="menu">
+              <div class="menu">
                 <i class="fa-solid fa-bars"></i>
               </div>
         
               <ul class="nav nav-pills">
 
-                <li class="nav-button">
+                <li class="nav-button" aria-label="button link to home page">
                   <a class="btn" href="https://ericdurban.github.io/index.html" aria-current="page">Home</a>
                 </li>
 
@@ -74,7 +74,8 @@
                   </a>
                 </li>
                 
-                <li class="nav-item"><a href="#contact-section" class="nav-link">
+                <li class="nav-item">
+                  <a href="#contact-section" class="nav-link">
                   <span class="icon-text">
                     <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 512 512">
                     <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -87,10 +88,10 @@
               </ul>
 
             </header>
-          </div>
+          </section>
 
           <!-- HERO BANNER -->
-          <div>
+          <section>
             <div class="container-cover p-5 text-center bg-body-tertiary">
               <div class="container py-5">
                 <h1>Hi, I'm Eric</h1>
@@ -107,16 +108,16 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
     
           <!-- ABOUT ME -->
-          <div class="container  px-4 py-4" id="about-section">
+          <section class="container px-4 py-4" id="about-section">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
               <div class="col-10 col-sm-8 col-lg-6">
                 <img src="./Photos/Linkedin Profile Picture.jfif" class="img-container d-block mx-lg-auto img-fluid" alt="LinkedIn profile of Eric Urban." width="700" height="500" loading="lazy">
               </div>
               <div class="col-lg-6">
-                <h1 class="header-text display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
+                <h2 class="header-text display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h2>
                 <p class="lead">I have loved diving into the world of coding and while I'm still early in my programming journey, I've already
                    started building a <span class="highlighted-words1">diverse portfolio of projects</span> that showcase my skills. The purpose of this website is to highlight 
                    those projects, and I hope you take a look below and enjoy them as much as I have! </p>
@@ -126,17 +127,17 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           <hr>
 
           <!-- SKILLS -->
-          <div class="container px-4" id="skills-section">       
+          <section class="container px-4" id="skills-section">       
             <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
             <!-- Skills Header -->
             <div class="col-md-12 d-flex flex-column align-items-center gap-2" id="text-section">
               <div>
-                <h1 class="header-text display-5 fw-bold text-body-emphasis ">Skills</h1>
+                <h2 class="header-text display-5 fw-bold text-body-emphasis ">Skills</h2>
                 <p class="lead">I'm <span class="highlighted-words1">proficient in a range of software tools</span> with my foundation built through The App Brewery's course, 
                   <span class="highlighted-link" id="modalTrigger">The Complete Full-Stack Web Development Bootcamp</span>. I specialize in building responsive, user-friendly 
                   interfaces with a strong focus on frontend tools such as HTML, CSS, and JavaScript.
@@ -146,7 +147,7 @@
               <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <h2>The Complete Full-Stack Web Development Bootcamp</h2>
+                    <h3>The Complete Full-Stack Web Development Bootcamp</h3>
                     <object data="./Photos/The Complete Full-Stack Web Development Bootcamp.pdf" aria-label="Bootcamp Course Certification PDF" type="application/pdf" class="pdf-frame"></object>
                     <p>This is where I gained the skills necessary to become a Full-Stack Developer.</p>
                 </div>
@@ -205,7 +206,7 @@
                                   
                     <div class="d-flex align-items-start" id="skills-card">
                         <div class="ms-3">
-                            <h4 class="fw-semibold mb-0 text-body-emphasis">Front-End</h4>
+                            <h3 class="fw-semibold mb-0 text-body-emphasis">Front-End</h3>
                             <p class="text-body-secondary">Proficient in using <span class="highlighted-words">HTML, CSS, and JavaScript</span> and frameworks like
                               <span class="highlighted-words">Bootstrap and React</span> to build responsive, interactive, and visually appealing websites with 
                               a focus on clean code and user experience.
@@ -225,7 +226,7 @@
                 
                     <div class="d-flex align-items-start" id="skills-card">
                       <div class="ms-3">
-                         <h4 class="fw-semibold mb-0 text-body-emphasis">Back-End</h4>
+                         <h3 class="fw-semibold mb-0 text-body-emphasis">Back-End</h3>
                          <p class="text-body-secondary">Skilled in Backend frameworks like <span class="highlighted-words">Node.js and Express.js</span> and templating
                               engines like <span class="highlighted-words">EJS</span> to build efficient, scalable web applications with dynamic server-side rendering and smooth 
                               client-server interaction.
@@ -245,7 +246,7 @@
                 
                     <div class="d-flex align-items-start"  id="skills-card">
                       <div class="ms-3">
-                          <h4 class="fw-semibold mb-0 text-body-emphasis">Data Handling</h4>
+                          <h3 class="fw-semibold mb-0 text-body-emphasis">Data Handling</h3>
                           <p class="text-body-secondary">Used tools like <span class="highlighted-words">PostgreSQL, APIs, and Postman</span> to efficiently 
                               manage databases, integrate services, and test data flows for seamless application performance.
                           </p>
@@ -264,7 +265,7 @@
 
                     <div class="d-flex align-items-start" id="skills-card">
                       <div class="ms-3">
-                        <h4 class="fw-semibold mb-0 text-body-emphasis">Version Control</h4>
+                        <h3 class="fw-semibold mb-0 text-body-emphasis">Version Control</h3>
                         <p class="text-body-secondary">Managed <span class="highlighted-words">Git and GitHub</span> for code changes, collaborating with teams, and tracking project 
                               history efficiently.
                         </p>
@@ -283,7 +284,7 @@
                 
                     <div class="d-flex align-items-start"  id="skills-card">
                         <div class="ms-3">
-                            <h4 class="fw-semibold mb-0 text-body-emphasis">Login Security</h4>
+                            <h3 class="fw-semibold mb-0 text-body-emphasis">Login Security</h3>
                             <p class="text-body-secondary">Developed robust login security for web applications using <span class="highlighted-words">OAuth</span> for secure authentication 
                               and <span class="highlighted-words">hashing techniques like bcrypt</span> to protect user passwords and sensitive data.
                             </p>
@@ -302,7 +303,7 @@
 
                     <div class="d-flex align-items-start" id="skills-card">
                        <div class="ms-3">
-                          <h4 class="fw-semibold mb-0 text-body-emphasis">Other Technologies</h4>
+                          <h3 class="fw-semibold mb-0 text-body-emphasis">Other Technologies</h3>
                           <p class="text-body-secondary">
                             Utilized various tools like <span class="highlighted-words">Amazon Web Services, Microsoft Office Products, and Blockchain</span> to diversify 
                             my skillset.
@@ -314,13 +315,13 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         <hr>
 
        
         <!-- PROJECTS -->
-        <div class="container" id="projects-section">
-          <h1 class="header-text display-5 fw-bold text-body-emphasis lh-1 mb-3">Projects</h1>
+        <section class="container" id="projects-section">
+          <h2 class="header-text display-5 fw-bold text-body-emphasis lh-1 mb-3">Projects</h2>
           <!-- FILTER DROP DOWN MENU -->
           <div class="container mb-4">
             <label for="project-filter">Filter projects:</label>
@@ -345,7 +346,7 @@
                     </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="https://ericdurban.github.io/Jeri-Urban-Studios/index.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                      <a href="https://ericdurban.github.io/Jeri-Urban-Studios/index.html" class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</a>
                     </div>
                     <small class="text-body-secondary">Front-End</small>
                   </div>
@@ -364,7 +365,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="https://ericdurban.github.io/Alphabet/index.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                      <a href="https://ericdurban.github.io/Alphabet/index.html"  class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</a>
                     </div>
                     <small class="text-body-secondary">Front-End</small>
                   </div>
@@ -383,7 +384,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="#projects-section" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                      <a href="#projects-section"  class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</a>
                     </div>
                     <small class="text-body-secondary">Back-End</small>
                   </div>
@@ -395,11 +396,11 @@
             <div id="videoModal3" class="modal">
               <div class="modal-content">
                 <span class="close" onclick="closeModal(3)">&times;</span>
-                <h2>LyricHunt</h2>
+                <h3>LyricHunt</h3>
                 <p>Due to the need for specific technologies and additional setup, this webpage isn't hosted online. Instead, I've created this video to demonstrate how the application functions. 
                   For those with a technical background who are interested in viewing the code or running the project locally, feel free to click the link 
                   <a href="https://github.com/ericdurban/LyricHunt">here</a></p>
-                <iframe id="videoFrame3" width="560" height="315" src="" aria-label="LyricHunt Project Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="videoFrame3" src="" aria-label="LyricHunt Project Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
 
@@ -413,7 +414,7 @@
                     </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="https://github.com/ericdurban/The-Rep-Calculator" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                      <a href="https://github.com/ericdurban/The-Rep-Calculator"  class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</a>
                     </div>
                     <small class="text-body-secondary">Front-End</small>
                   </div>
@@ -432,7 +433,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="#projects-section" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                      <a href="#projects-section"  class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</a>
                     </div>
                     <small class="text-body-secondary">Back-End</small>
                   </div>
@@ -444,11 +445,11 @@
             <div id="videoModal5" class="modal">
               <div class="modal-content">
                 <span class="close" onclick="closeModal(5)">&times;</span>
-                <h2>World Travel Tracker</h2>
+                <h3>World Travel Tracker</h3>
                 <p>Due to the need for specific technologies and additional setup, this webpage isn't hosted online. Instead, I've created this video to demonstrate how the application functions. 
                   For those with a technical background who are interested in viewing the code or running the project locally, feel free to click the link 
                   <a href="https://github.com/ericdurban/World-Travel-Tracker/blob/main/README.md">here</a></p>
-                <iframe id="videoFrame5" width="560" height="315" src="" aria-label="World Travel Tracker Project Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="videoFrame5" src="" aria-label="World Travel Tracker Project Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
 
@@ -464,7 +465,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button  class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</button>
                     </div>
                     <small class="text-body-secondary">Back-End</small>
                   </div>
@@ -476,11 +477,11 @@
             <div id="videoModal6" class="modal">
               <div class="modal-content">
                 <span class="close" onclick="closeModal(6)">&times;</span>
-                <h2>The Urban Blog</h2>
+                <h3>The Urban Blog</h3>
                 <p>Due to the need for specific technologies and additional setup, this webpage isn't hosted online. Instead, I've created this video to demonstrate how the application functions. 
                   For those with a technical background who are interested in viewing the code or running the project locally, feel free to click the link 
                   <a href="https://github.com/ericdurban/Blog-App">here</a></p>
-                <iframe id="videoFrame6" width="560" height="315" src="" aria-label="World Travel Tracker Project Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="videoFrame6" src="" aria-label="World Travel Tracker Project Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
 
@@ -495,7 +496,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="#projects-section" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                      <a href="#projects-section"  class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</a>
                     </div>
                     <small class="text-body-secondary">Back-End</small>
                   </div>
@@ -507,11 +508,11 @@
             <div id="videoModal7" class="modal">
               <div class="modal-content">
                 <span class="close" onclick="closeModal(7)">&times;</span>
-                <h2>The To-Do-List</h2>
+                <h3>The To-Do-List</h3>
                 <p>Due to the need for specific technologies and additional setup, this webpage isn't hosted online. Instead, I've created this video to demonstrate how the application functions. 
                   For those with a technical background who are interested in viewing the code or running the project locally, feel free to click the link 
                   <a href="https://github.com/ericdurban/To-Do-List/blob/main/README.md">here</a></p>
-                <iframe id="videoFrame7" width="560" height="315" src="" aria-label="To-Do-List Project Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="videoFrame7" src="" aria-label="To-Do-List Project Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
 
@@ -527,7 +528,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button  class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</button>
                     </div>
                     <small class="text-body-secondary">Back-End</small>
                   </div>
@@ -545,7 +546,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="https://ericdurban.github.io/Resume/index.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                      <a href="https://ericdurban.github.io/Resume/index.html"  class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</a>
                     </div>
                     <small class="text-body-secondary">Front-End</small>
                   </div>
@@ -565,7 +566,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="https://ericdurban.github.io/Simon-Challenge/index.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                      <a href="https://ericdurban.github.io/Simon-Challenge/index.html"  class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</a>
                     </div>
                     <small class="text-body-secondary">Front-End</small>
                   </div>
@@ -584,7 +585,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button  class="btn btn-sm btn-outline-secondary" id="viewBtn" aria-label="button link to view project">View</button>
                     </div>
                     <small class="text-body-secondary">Front-End</small>
                   </div>
@@ -593,19 +594,19 @@
             </div>
 
           </div>
-        </div>
+        </section>
 
       <hr>
 
       <!-- CONTACT ME -->
-      <div class="contact-me" id="contact-section">
-        <h1 class="header-text display-5 fw-bold text-body-emphasis lh-1 mb-3">Contact Me</h1>
+      <section class="contact-me" id="contact-section">
+        <h2 class="header-text display-5 fw-bold text-body-emphasis lh-1 mb-3">Contact Me</h2>
         <p class="lead">Let me help you <span class="highlighted-words1">create your vision</span>  into reality.</p>
         <a class="btn" href="mailto:ericdurban32@gmail.com">SEND AN EMAIL</a>
-      </div>
+      </section>
 
       <!-- FOOTER -->
-      <div class="footer">
+      <section class="footer">
         <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
@@ -645,7 +646,7 @@
 
         </footer>
         </div>
-      </div> 
+      </section> 
 
       <!-- JAVASCRIPT FILE LINK -->
       <script src="index.js"></script>

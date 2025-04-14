@@ -1,7 +1,7 @@
 ///////////////////////////////////
 //////////HAMBURGER MENU///////////
 ///////////////////////////////////
-const menuIcon = document.getElementById('menu');
+const menuIcon = document.getElementsByClassName('menu')[0];
 const navLinks = document.querySelector('.nav-pills')
 const navLinksItems = document.querySelectorAll('.nav-link');
 
@@ -48,7 +48,7 @@ let resetWords = () => {
     Array.from(word.children).forEach(letter => {
       letter.classList.remove("behind", "in", "out"); // Reset all animations.
     });
-  });
+  }); 
 };
 
 let rotateText = () => {
@@ -86,9 +86,9 @@ setInterval(rotateText, 4000); // Rotate every 4 seconds.
 ////////////////////////////////
 //Course Certificate PDF Modal//
 ////////////////////////////////
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("modalTrigger"); 
-var span = document.getElementsByClassName("close")[0];
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("modalTrigger"); 
+const span = document.getElementsByClassName("close")[0];
 
 let isModalOpen = false; // Add a flag to prevent multiple triggers.
 
@@ -110,6 +110,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
 
 
 //////////////////////////
@@ -188,13 +190,24 @@ function closeModal(modalNumber) {
 }
 
 window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display= "none";
+    isModalOpen = false;
+  }
+
   var videoModal3 = document.getElementById("videoModal3");
-  var videoModal4 = document.getElementById("videoModal4");
+  var videoModal5 = document.getElementById("videoModal5");
+  var videoModal6 = document.getElementById("videoModal6");
+  var videoModal7 = document.getElementById("videoModal7");
 
   if (event.target == videoModal3) {
     closeModal(3);
-  } else if (event.target == videoModal4) {
-    closeModal(4);
+  } else if (event.target == videoModal5) {
+    closeModal(5);
+  } else if (event.target == videoModal6) {
+    closeModal(6);
+  } else if (event.target == videoModal7) {
+    closeModal(7);  
   }
 };
 
@@ -211,3 +224,22 @@ function projectRedirect10() {
       event.preventDefault(); // Prevent the link from navigating
       openModal(); 
     });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' || event.keyCode === 27) { 
+        if (modal && modal.style.display === 'block' || getComputedStyle(modal).display === 'block') {
+          modal.style.display= 'none'; 
+          isModalOpen = false;
+      }
+
+      const videoModals = [3, 5, 6, 7]; 
+      videoModals.forEach(num => {
+        const videoModal = document.getElementById(`videoModal${num}`);
+        if (videoModal && videoModal.style.display === 'block' || getComputedStyle(videoModal).display === 'block') {
+          closeModal(num); 
+        }
+      });
+      }
+    });
+});
