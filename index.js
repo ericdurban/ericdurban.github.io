@@ -155,7 +155,7 @@ function openModal3() {
 }
 
 function projectRedirect4() {
-  location.href="https://github.com/ericdurban/The-Rep-Calculator";
+  location.href="https://ericdurban.github.io/The-rep-calculator/index.html";
 }
 
 function openModal5() {
