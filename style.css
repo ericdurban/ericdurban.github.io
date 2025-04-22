@@ -415,7 +415,13 @@ css is applied in code under skills*/
           display: flex;
         }
 
-  .about-section {
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
     text-align: center;
   }
 
